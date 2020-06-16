@@ -67,4 +67,4 @@ jobs:
         uses: actions/upload-artifact@v2-preview
         with:
           name: release-ready-${{ env.CURR_DATE }}-${{ env.OBS_GIT_HASH }}-${{ env.OBS_GIT_TAG }}
-          path: "./artifact/"
+          path: "./release-artifact/"
