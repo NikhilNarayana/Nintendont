@@ -14,7 +14,6 @@ jobs:
   ubuntu64:
     name: "Loader Build"
     runs-on: ubuntu-18.04
-    if: github.event_name != 'pull_request' || contains( github.event.pull_request.labels.*.name, 'seeking testers')
     steps:
       - name: "Checkout"
         uses: actions/checkout@v2
