@@ -34,7 +34,7 @@ jobs:
           wget https://github.com/devkitPro/pacman/releases/download/devkitpro-pacman-1.0.1/devkitpro-pacman.deb
           sudo dpkg -i devkitpro-pacman.deb
           sudo dkp-pacman -Sy
-          sudo dkp-pacman -Sy gba-dev gamecube-dev wii-dev
+          sudo dkp-pacman --noconfirm -S gba-dev gamecube-dev wii-dev
       - name: "Build"
         if: success()
         working-directory: ${{ github.workspace }}
