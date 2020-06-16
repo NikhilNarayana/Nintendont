@@ -44,7 +44,7 @@ jobs:
           export DEVKITARM=/opt/devkitpro/devkitARM
           export DEVKITPPC=/opt/devkitpro/devkitPPC
           make -j7
-      - name: "Package Netplay"
+      - name: "Package"
         if: success()
         working-directory: ${{ github.workspace }}
         run: |
